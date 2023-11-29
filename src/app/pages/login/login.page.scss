@@ -1,0 +1,128 @@
+ion-list {
+    background: transparent !important;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    ion-label {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    ion-item {
+        --background: #F5F8FC;
+        margin-bottom: 16px;
+        border-radius: 20px;
+        border: 2px solid #C1C9D6;
+
+        ion-icon {
+            color: var(--icon-color);
+            margin-right: 0;
+        }
+
+        ion-input {
+            padding: 5px 4px !important;
+            --padding-start: 14px;
+        }
+
+        .eye {
+            color: var(--ion-color-secondary);
+        }
+    }
+}
+
+.topbar {
+    background-image: url(/assets/topbar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 131px 80px;
+    padding-top: 57px;
+}
+
+.small {
+    display: block;
+    color: var(--ion-color-primary);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 40px 0px;
+}
+
+a.small-text {
+    color: var(--ion-color-light);
+    display: block;
+    margin-bottom: 31px;
+}
+
+ion-button {
+    max-width: 92%;
+    margin: 0px auto;
+    min-height: 58px;
+    font-size: 16px;
+}
+
+h2 {
+    margin-top: 18px;
+    font-size: 26px;
+    padding: 0px 17px;
+
+    &:after {
+        content: "";
+        border-bottom: 8px solid var(--ion-color-primary);
+        display: block;
+        width: 30px;
+        margin-top: 8px;
+    }
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding-top: 5px;
+
+    ion-checkbox {
+        --border-radius: 7px;
+        --border-color: var(--ion-color-secondary);
+        --border-width: 2px;
+        --size: 21px;
+        position: relative;
+        top: 4px;
+        margin-right: 5px;
+        --checkbox-background-checked: var(--ion-color-secondary);
+        --border-color-checked: var(--ion-color-secondary);
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .topbar {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ion-col {
+        display: table;
+    }
+
+    .align {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 20px 44px;
+    }
+
+    ion-list {
+        ion-item {
+            ion-icon {
+                margin: 0;
+            }
+
+            ion-input {
+                padding: 0px 4px !important;
+            }
+        }
+    }
+}

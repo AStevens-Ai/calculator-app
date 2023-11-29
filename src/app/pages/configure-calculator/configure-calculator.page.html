@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Configure</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <label>Calculator display color</label>
+  <ion-segment [(ngModel)]="selectedInput">
+    <ion-segment-button value="red">Red</ion-segment-button>
+    <ion-segment-button value="blue">Blue</ion-segment-button>
+  </ion-segment>
+  <label>Button Text Color</label>
+  <ion-segment [(ngModel)]="selectedColor">
+    <ion-segment-button value="red">Red</ion-segment-button>
+    <ion-segment-button value="blue">Blue</ion-segment-button>
+  </ion-segment>
+  <label>Background Color</label>
+  <ion-segment [(ngModel)]="selectedBackground">
+    <ion-segment-button value="purple">Purple</ion-segment-button>
+    <ion-segment-button value="pink">Pink</ion-segment-button>
+  </ion-segment>
+
+  <ion-button (click)="applyStyles()">Apply Styles</ion-button>
+</ion-content>
